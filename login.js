@@ -16,6 +16,7 @@ document.getElementById('loginBtn').addEventListener('click', () => {
             window.location.href = "dashboard.html";
         }, 1500);
     } else {
+        console.log("Login failed for user:", username);
         message.style.color = "red";
         message.textContent = "Invalid username or password.";
     }
